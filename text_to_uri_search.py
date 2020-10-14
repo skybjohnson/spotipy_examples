@@ -4,7 +4,7 @@ import csv
 
 ## Authentication
 # Register an app with https://developer.spotify.com/dashboard/ and paste your Client ID and Client Secret on the line below
-token = util.oauth2.SpotifyClientCredentials(client_id='##', client_secret='##')
+token = spotipy.SpotifyClientCredentials(client_id='##', client_secret='##')
 cache_token = token.get_access_token()
 spotify = spotipy.Spotify(cache_token)
 
